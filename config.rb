@@ -54,11 +54,11 @@ Slim::Engine.set_default_options disable_escape: true
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'assets/stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'assets/javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'assets/images'
 
 # Build-specific configuration
 configure :build do
