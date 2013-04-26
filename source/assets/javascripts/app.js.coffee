@@ -130,7 +130,7 @@ BrockSock.animation =
     tlMain.add(@blipAnimation(), "-=1")
     tlMain.add(@blipAnimationFinal(), "-=.25")
     tlMain.staggerFrom($(".info_secondary p", $scope), 2, {rotationY: -90}, .125)
-    tlMain.from($(".info_primary", $scope), .375, {left: "-85px", ease: Power2.easeOut})
+    tlMain.from($(".info_primary", $scope), .375, {left: "-95px", ease: Power2.easeOut})
     tlMain
 
   blipAnimation: ->
