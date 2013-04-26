@@ -1,5 +1,13 @@
 @import "vendor/lesshat";
 
+@blue-light: hsla(211,19%,73%,1);
+@blue-dark: hsla(208,21%,45%,1);
+@yellow-light: hsla(46,45%,68%,1);
+@yellow-dark: hsla(47,56%,63%,1);
+@orange-light: hsla(30,37%,62%,1);
+@orange-dark: hsla(30,51%,43%,1);
+
+
 * {
   margin: 0;
   padding: 0;
@@ -35,15 +43,27 @@ ul {
 }
 
 .bg_1 {
-  .gradient(~"linear-gradient(45deg,  hsla(211,19%,73%,1) 20%,hsla(208,21%,45%,1) 100%)");
+  background-color: @blue-light;
 }
 
 .bg_2 {
-  .gradient(~"linear-gradient(45deg,  hsla(46,45%,68%,1) 20%,hsla(47,56%,63%,1) 100%)");
+  background-color: @yellow-light;
 }
 
 .bg_3 {
-  .gradient(~"linear-gradient(45deg,  hsla(30,37%,62%,1) 20%,hsla(30,51%,43%,1) 100%)");
+  background-color: @orange-light;
+}
+
+.bg_gradient_1 {
+  .gradient(~"linear-gradient(45deg, @{blue-light} 20%, @{blue-dark} 100%)");
+}
+
+.bg_gradient_2 {
+  .gradient(~"linear-gradient(45deg, @{yellow-light} 20%, @{yellow-dark} 100%)");
+}
+
+.bg_gradient_3 {
+  .gradient(~"linear-gradient(45deg, @{orange-light} 20%, @{orange-dark} 100%)");
 }
 
 /* ----------------------- SIDEBAR --------------------------- */
@@ -78,7 +98,6 @@ ul {
 }
 
 .nav {
-  margin-top: 50px;
   width: 100%;
   text-transform: uppercase;
   font-size: 16px;
@@ -94,16 +113,15 @@ ul {
     }
 
     &:nth-child(1):hover {
-      background-color: #6F8091;
+      background-color: @blue-light;
     }
 
     &:nth-child(2):hover {
-      background-color: #D5C077;
+      background-color: @yellow-light;
     }
 
     &:nth-child(3):hover {
-      background-color: #BB9268;
-      border-top: black 3px solid;
+      background-color: @orange-light;
     }
   }
 }
