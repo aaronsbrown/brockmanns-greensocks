@@ -1,0 +1,81 @@
+.poster_1 {
+  background-color: #f4ede5;
+  -webkit-transform:rotateX(30deg) translateZ(231px);
+     -moz-transform:rotateX(30deg) translateZ(231px);
+      -ms-transform:rotateX(30deg) translateZ(231px);
+       -o-transform:rotateX(30deg) translateZ(231px);
+          transform:rotateX(30deg) translateZ(231px);
+}
+
+poster_1 p {
+ line-height: 11px;
+}
+
+.poster_1 .bar {
+  position: relative;
+  margin-right: 2px;
+  height: 480px;
+  float: left;
+  background-color: #f4a01c;
+  position:relative;
+  opacity: 0;
+}
+
+.poster_1 .bar_1 {
+ width: 290px;
+}
+
+.poster_1 .bar_2 {
+ left: -292px;
+ width: 142px;
+ top: 190px;
+}
+
+.poster_1 .bar_3 {
+ left: -436px;
+ width: 70px;
+ top: 320px;
+}
+
+.poster_1 .bar_4 {
+ left: -508px;
+ width: 35px;
+ top: 116px;
+}
+
+.poster_1 .bar_5 {
+ left: -545px;
+ margin-right: 0;
+ width: 20px;
+}
+
+.poster_1 .first_names {
+ text-align: right;
+ padding-top: 2px;
+ margin-left: 40px;
+}
+
+.poster_1 .first_names li {
+ line-height: 27px;
+}
+
+.poster_1 .last_names {
+ font-size: 22px;
+ margin-left:16px;
+}
+
+.poster_1 .info_primary {
+ clear: left;
+ text-align: right;
+ top: 154px;
+}
+
+.poster_1 .info_secondary {
+ 
+ margin-left:18px;
+ top: 62px;
+}
+
+.poster_1 .info_secondary li {
+ margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+doctype 5
+html
+  head
+    meta name="charset" content="utf-8"
+
+  title "Müller-Brockmann's Green Socks&mdash;A Greensock Demo Site"
+
+  = stylesheet_link_tag "normalize", "app"
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.3/TweenMax.min.js"></script>
+  = javascript_include_tag  "app"
+
+body.bg_1
+    = yield

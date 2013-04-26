@@ -1,0 +1,287 @@
+.poster_3 {
+  background-color: #FFF;
+  -webkit-transform: rotateX(90deg) rotateY(180deg) rotateZ(180deg) translateZ(231px);
+  -moz-transform: rotateX(90deg) rotateY(180deg) rotateZ(180deg) translateZ(231px);
+  -ms-transform: rotateX(90deg) rotateY(180deg) rotateZ(180deg) translateZ(231px);
+  -o-transform: rotateX(90deg) rotateY(180deg) rotateZ(180deg) translateZ(231px);
+  transform: rotateX(90deg) rotateY(180deg) rotateZ(180deg) translateZ(231px);
+}
+
+.poster_3 .text {
+  margin-left: 30px;
+  top: 500px;
+  left: 0;
+  font-size: 8px;
+}
+
+.poster_3 .title {
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  left: 3px;
+}
+
+.poster_3 .info_primary {
+  text-align: right;
+  top: 32px;
+  left: 81px;
+}
+
+.poster_3 .info_primary li:nth-child(1) {
+  margin-bottom: 46px;
+}
+
+.poster_3 .info_primary li:nth-child(2) {
+  margin-bottom: 7px;
+}
+
+.poster_3 .info_primary li:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+.poster_3 .info_secondary {
+  top: 32px;
+  left: 88px;
+}
+
+.poster_3 .info_secondary li {
+ margin-bottom: 6px;
+}
+
+.poster_3 .start, .end, .mask {
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  position:absolute;
+}
+
+.poster_3 .arc_1 .start, .arc_1 .end {
+  top:363px;
+  left:-42px;
+  width:386px;
+  height:386px;
+  border:8px solid;
+}
+
+.poster_3 .arc_1 .mask {
+  top:361px;
+  left:-45px;
+  width:384px;
+  height:384px;
+  border:12px solid;
+  border-color:white transparent transparent transparent;
+}
+
+.poster_3 .arc_1 .mask_1 {
+  -webkit-transform:rotate(-47deg);
+     -moz-transform:rotate(-47deg);
+      -ms-transform:rotate(-47deg);
+       -o-transform:rotate(-47deg);
+          transform:rotate(-47deg);
+}
+
+.poster_3 .arc_1 .mask_2 {
+  -webkit-transform:rotate(27deg);
+     -moz-transform:rotate(27deg);
+      -ms-transform:rotate(27deg);
+       -o-transform:rotate(27deg);
+          transform:rotate(27deg);
+}
+
+.poster_3 .arc_1 .start {
+  border-color:black transparent transparent transparent;
+  -webkit-transform:rotate(77deg);
+     -moz-transform:rotate(77deg);
+      -ms-transform:rotate(77deg);
+       -o-transform:rotate(77deg);
+          transform:rotate(77deg);
+}
+
+.poster_3 .arc_1 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform:rotate(93deg);
+     -moz-transform:rotate(93deg);
+      -ms-transform:rotate(93deg);
+       -o-transform:rotate(93deg);
+          transform:rotate(93deg);
+}
+
+
+.poster_3 .arc_2 .start, .arc_2 .end, .arc_2 .mask {
+  top:346px;
+  left:-59px;
+  width:407px;
+  height:407px;
+  border:15px solid;
+}
+
+.poster_3 .arc_2 .start {
+  border-color:black transparent transparent transparent;
+  -webkit-transform:rotate(65deg);
+     -moz-transform:rotate(65deg);
+      -ms-transform:rotate(65deg);
+       -o-transform:rotate(65deg);
+          transform:rotate(65deg);
+}
+
+.poster_3 .arc_2 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(45deg);
+     -moz-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+       -o-transform:rotate(45deg);
+          transform:rotate(45deg);
+}
+
+.poster_3 .arc_2 .mask {
+  left:-60px;
+  border:19px solid;
+  border-color:white transparent transparent transparent;
+  -webkit-transform:rotate(-2deg);
+     -moz-transform:rotate(-2deg);
+      -ms-transform:rotate(-2deg);
+       -o-transform:rotate(-2deg);
+          transform:rotate(-2deg);
+}
+
+.poster_3 .arc_3 .start, .arc_3 .end, .arc_3 .mask {
+  top:314px;
+  left:-91px;
+  width:441px;
+  height:441px;
+  border:30px solid;
+}
+
+.poster_3 .arc_3 .mask {
+  top: 313px;
+  left: -94px;
+  border:33px solid;
+  border-color:white transparent transparent transparent;
+  -webkit-transform: rotate(-32deg);
+     -moz-transform:rotate(-32deg);
+      -ms-transform:rotate(-32deg);
+       -o-transform:rotate(-32deg);
+          transform:rotate(-32deg);
+}
+
+.poster_3 .arc_3 .start {
+  border-color:black transparent transparent transparent;
+  -webkit-transform:rotate(45deg);
+     -moz-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+       -o-transform:rotate(45deg);
+          transform:rotate(45deg);
+}
+
+.poster_3 .arc_3 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(12deg);
+     -moz-transform:rotate(12deg);
+      -ms-transform:rotate(12deg);
+       -o-transform:rotate(12deg);
+          transform:rotate(12deg);
+}
+
+.poster_3 .arc_4 .start, .arc_4 .end {
+  top:252px;
+  left:-153px;
+  width:505px;
+  height:505px;
+  border:60px solid;
+}
+
+.poster_3 .arc_4 .start {
+  border-color:black black transparent transparent;
+  -webkit-transform: rotate(45deg);
+     -moz-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+       -o-transform:rotate(45deg);
+          transform:rotate(45deg);
+}
+
+.poster_3 .arc_4 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+   -ms-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+       transform:rotate(12deg);
+}
+
+.poster_3 .arc_5 .start, .arc_5 .end {
+  top:134px;
+  left:-266px;
+  width:621px;
+  height:621px;
+  border:120px solid;
+}
+
+.poster_3 .arc_5 .start {
+  border-color:black black transparent transparent;
+  -webkit-transform: rotate(88deg);
+  -moz-transform:rotate(88deg);
+   -ms-transform:rotate(88deg);
+    -o-transform:rotate(88deg);
+       transform:rotate(88deg);
+}
+
+.poster_3 .arc_5 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+   -ms-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+       transform:rotate(12deg);
+}
+
+.poster_3 .arc_6 .start, .arc_6 .end {
+  top:-93px;
+  left:-489px;
+  width:859px;
+  height:859px;
+  border:228px solid;
+}
+
+.poster_3 .arc_6 .start {
+  border-color:black black transparent transparent;
+  -webkit-transform: rotate(32deg);
+  -moz-transform:rotate(32deg);
+   -ms-transform:rotate(32deg);
+    -o-transform:rotate(32deg);
+       transform:rotate(32deg);
+}
+
+.poster_3 .arc_6 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+   -ms-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+       transform:rotate(12deg);
+}
+
+.poster_3 .arc_7 .start, .arc_7 .end {
+  top:-529px;
+  left:-878px;
+  width:1253px;
+  height:1253px;
+  border:440px solid;
+}
+
+.poster_3 .arc_7 .start {
+  border-color:black black transparent transparent;
+  -webkit-transform: rotate(32deg);
+  -moz-transform:rotate(32deg);
+   -ms-transform:rotate(32deg);
+    -o-transform:rotate(32deg);
+       transform:rotate(32deg);
+}
+
+.poster_3 .arc_7 .end {
+  border-color:transparent transparent black transparent;
+  -webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+   -ms-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+       transform:rotate(12deg);
+}
