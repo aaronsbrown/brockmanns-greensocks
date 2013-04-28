@@ -138,13 +138,16 @@ ul {
   margin: 0 auto;
   width: 565px;
   height: 800px;
+  .perspective(900px);
+
+
 }
 
 .triangle {
   position:relative;
-  .transform-style(preserve-3d);
-  .transform-origin(50% 400px);
-  .transform(rotateX(-30deg));
+  // .transform-style(preserve-3d);
+  // .transform-origin(50% 400px);
+  // .transform(~"translateZ(-200px) rotateX(-30deg)");
 }
 
 /* ----------------------- CONTROLS --------------------------- */

@@ -7,4 +7,5 @@ gem "coffee-script"
 gem "less"
 gem "therubyracer"
 gem "libv8", "3.11.8.3"
-gem "middleman", "~>3.0.13"
+gem 'rb-fsevent', '~> 0.9'
+gem "middleman", "3.1.0.beta.1"

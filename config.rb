@@ -5,6 +5,8 @@ require 'less'
 Slim::Engine.set_default_options format: :html5
 Slim::Engine.set_default_options disable_escape: true
 
+set :debug_assets, true
+
 ###
 # Compass
 ###
