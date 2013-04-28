@@ -1,6 +1,9 @@
 brocksock.utils = {}
 
 brocksock.utils.css =
+
+  removeBackgroundClass: (el) ->
+    @removeClass(el, /bg_\d/)
   
   removeClass: (el, regex) ->
     $(el).removeClass (index, cssClass) ->

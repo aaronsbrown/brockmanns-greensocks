@@ -26,6 +26,7 @@ class brocksock.AnimationManager
   updateAnimation: (e, animationName) =>
 
     @pause()
+    console.log animationName
     animationObj = brocksock.animation[animationName]
     @currentAnimation = animationObj.animation()
 

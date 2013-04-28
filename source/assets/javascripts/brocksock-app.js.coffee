@@ -1,11 +1,12 @@
-#= require 'brocksock-namespace'
-#= require_tree './utils'
-#= require_tree './modules'
+#= require brocksock-namespace
+#= require_tree ./utils
+#= require ./modules/animation
+#= require ./modules/navigation
+#= require ./modules/controls
 
 
 class brocksock.App
 
   constructor: ->
-    @nav = new brocksock.Navigation('.nav')
-    @controls = new brocksock.AnimationManager('.controls')
-    @controls.start()
+    new brocksock.Navigation('.nav')
+    new brocksock.AnimationManager('.controls').start()
