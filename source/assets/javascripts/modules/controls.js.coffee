@@ -17,10 +17,11 @@ class brocksock.AnimationManager
 
   start: =>
     timeline = new TimelineLite()
-    # timeline.set(".triangle", {scale: 0, opacity: 0} )
-    # timeline.add "start", "+=1"
-    # timeline.to('.triangle', 3, { scale: 1, opacity: 1 } )
-    # timeline.add ( => @play() )
+    timeline.set(".triangle", {scale: 0, opacity: 0} )
+    timeline.add "start", "+=1"
+    timeline.to('.triangle', 3, { scale: 1, opacity: 1, rotationX: 330 } )
+    timeline.set(".triangle", {rotationX: -30} )
+    timeline.add ( => @play() )
 
   updateAnimation: (e, animationName) =>
 
@@ -29,7 +30,7 @@ class brocksock.AnimationManager
     @currentAnimation = animationObj.animation()
 
     tl = new TimelineMax()
-    tl.to(".triangle", 4, { rotationX: animationObj.xCoord })
+    tl.to(".triangle", 2, { rotationX: animationObj.xCoord })
     tl.to('body', 4, { className: animationObj.bgClass }, 0)
     tl.call( => @play() )
 
@@ -58,8 +59,6 @@ class brocksock.AnimationManager
     @currentAnimation.pause(0)
 
   play: =>
-    console.log 'play'
-    console.log @currentAnimation
     @currentAnimation.timeScale(1)
     if(@currentAnimation.progress() == 1)
       @currentAnimation.play(0)
