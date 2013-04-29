@@ -1,12 +1,19 @@
-class brocksock.Controls
+class brocksock.AnimationManager
 
-  # todo subscribe to a changed animation event
   constructor: (@el) ->
 
     @$el = $(@el)
-    @currentAnimation = undefined
 
-    brocksock.pubsub.subscribe 'scene-change', @updateCurrentAnimation
+    @animationCache = {}
+    for k,v of brocksock.animation
+      @animationCache[k] = 
+        animation: v.animation() # execute the functor to get a Timeline
+        xCoord: v.xCoord
+        bgClass: v.bgClass
+
+    @currentAnimation = @animationCache['animation1'].animation
+
+    brocksock.utils.pubsub.subscribe 'scene-change', @updateAnimation
 
     $('.replay', @$el).click => @replay()
     $('.doubleReverse', @$el).click => @doubleReverse()
@@ -16,8 +23,24 @@ class brocksock.Controls
     $('.play', @$el).click => @play()
     $('.doublePlay', @$el).click => @doublePlay()
 
-  updateCurrentAnimation: (e, animation) =>
-    @currentAnimation = animation
+  start: =>
+    timeline = new TimelineLite()
+    timeline.set(".triangle", {scale: 0, opacity: 0} )
+    timeline.add "start", "+=1"
+    timeline.to('.triangle', 3, { scale: 1, opacity: 1, rotationX: 330 } )
+    timeline.set(".triangle", {rotationX: -30} )
+    timeline.add ( => @play() )
+
+  updateAnimation: (e, animationName) =>
+
+    @stop()
+    animationObj = @animationCache[animationName]
+    @currentAnimation = animationObj.animation
+
+    tl = new TimelineLite()
+    tl.to(".triangle", 2, { rotationX: animationObj.xCoord })
+    tl.to('body', 2, { className: animationObj.bgClass }, 0)
+    tl.call( => @play() )
 
   replay: =>
     @currentAnimation.timeScale(1)

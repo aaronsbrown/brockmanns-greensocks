@@ -1,5 +1,5 @@
 /* 
- *= require_tree ./vendor
- *= require_tree ./base
- *= require_tree ./poster
+ *= require_tree './vendor'
+ *= require_tree './base'
+ *= require_tree './poster'
  */
