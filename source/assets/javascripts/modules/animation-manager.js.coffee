@@ -2,10 +2,16 @@ class brocksock.AnimationManager
 
   constructor: (@el) ->
 
-    # TODO iterate over each animation and add to array by name, then initialize with first
-
     @$el = $(@el)
-    @currentAnimation = brocksock.animation['animation1'].animation()
+
+    @animationCache = {}
+    for k,v of brocksock.animation
+      @animationCache[k] = 
+        animation: v.animation() # execute the functor to get a Timeline
+        xCoord: v.xCoord
+        bgClass: v.bgClass
+
+    @currentAnimation = @animationCache['animation1'].animation
 
     brocksock.utils.pubsub.subscribe 'scene-change', @updateAnimation
 
@@ -27,14 +33,13 @@ class brocksock.AnimationManager
 
   updateAnimation: (e, animationName) =>
 
-    @pause()
-    console.log animationName
-    animationObj = brocksock.animation[animationName]
-    @currentAnimation = animationObj.animation()
+    @stop()
+    animationObj = @animationCache[animationName]
+    @currentAnimation = animationObj.animation
 
-    tl = new TimelineMax()
+    tl = new TimelineLite()
     tl.to(".triangle", 2, { rotationX: animationObj.xCoord })
-    tl.to('body', 4, { className: animationObj.bgClass }, 0)
+    tl.to('body', 2, { className: animationObj.bgClass }, 0)
     tl.call( => @play() )
 
   replay: =>

@@ -139,8 +139,6 @@ ul {
   width: 565px;
   height: 800px;
   .perspective(900px);
-
-
 }
 
 .triangle {
@@ -153,22 +151,30 @@ ul {
 /* ----------------------- CONTROLS --------------------------- */
 
 .controls {
-  font-size: 16px;
   padding: 30px 20px 20px 20px;
-  margin-top: 50px;
-  border-top: 5px solid black;
+  margin-top: 3px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .control {
+  width: 50%;
   background-color: white;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, .1);
   .border-radius(7px);
+  &:hover {
+    background-color: darken(white, 2.5%);
+  }
+  &:active {
+    background-color: darken(white, 4.5%);
+    .box-shadow(~"inset 1px 1px 2px rgba(0,0,0,0.05)") 
+  }
 }
 
 .icon-wrapper {
-  margin-right: 10px;
+  margin-right: 5px;
   width: 18px;
   height: 18px;
   display: inline-block;
@@ -176,13 +182,17 @@ ul {
 }
 
 .icon {
-  font-size: 18px;
-}
-
-.icon-reverse, .icon-play {
   font-size: 14px;
 }
 
+.icon-reverse, .icon-play {
+  font-size: 12px;
+}
+
 .icon-pause, .icon-stop, .icon-replay {
-  font-size: 13px;
+  font-size: 11px;
+}
+
+.doublePlay .icon-wrapper, .doubleReverse .icon-wrapper {
+  line-height: 28px;
 }

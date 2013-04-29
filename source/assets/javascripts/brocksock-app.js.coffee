@@ -2,7 +2,7 @@
 #= require ./utils/utils
 #= require ./modules/animation
 #= require ./modules/navigation
-#= require ./modules/controls
+#= require ./modules/animation-manager
 
 
 class brocksock.App
