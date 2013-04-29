@@ -1,17 +1,1 @@
-.poster {
-  overflow: hidden;
-  position: absolute;
-  margin: 0 auto;
-  width: 565px;
-  height: 800px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.poster ul {
-  float: left;
-  position: relative;
-}
-.poster .text {
-  position: relative;
-}
+.poster{overflow:hidden;position:absolute;margin:0 auto;width:565px;height:800px;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden}.poster ul{float:left;position:relative}.poster .text{position:relative}
