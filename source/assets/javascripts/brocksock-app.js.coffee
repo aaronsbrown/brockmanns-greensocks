@@ -1,5 +1,5 @@
 #= require brocksock-namespace
-#= require_tree ./utils
+#= require ./utils/utils
 #= require ./modules/animation
 #= require ./modules/navigation
 #= require ./modules/controls

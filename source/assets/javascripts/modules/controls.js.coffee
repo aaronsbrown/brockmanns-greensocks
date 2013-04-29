@@ -2,6 +2,8 @@ class brocksock.AnimationManager
 
   constructor: (@el) ->
 
+    # TODO iterate over each animation and add to array by name, then initialize with first
+
     @$el = $(@el)
     @currentAnimation = brocksock.animation['animation1'].animation()
 
