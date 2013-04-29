@@ -1,0 +1,116 @@
+.poster_2 {
+  background-color: #959492;
+  -webkit-transform: rotateX(-30deg)  rotateZ(180deg) rotateY(180deg) translateZ(231px);
+  -moz-transform: rotateX(-30deg)  rotateZ(180deg) rotateY(180deg) translateZ(231px);
+  -o-transform: rotateX(-30deg)  rotateZ(180deg) rotateY(180deg) translateZ(231px);
+  -ms-transform: rotateX(-30deg)  rotateZ(180deg) rotateY(180deg) translateZ(231px);
+  transform: rotateX(-30deg)  rotateZ(180deg) rotateY(180deg) translateZ(231px);
+}
+.poster_2 p {
+  line-height: 12px;
+}
+.poster_2 .text {
+  margin-left: -208px;
+  top: -332px;
+}
+.poster_2 .content {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.poster_2 .info_primary {
+  top: 136px;
+  margin-left: 19px;
+}
+.poster_2 .info_secondary {
+  top: 57px;
+  left: 11px;
+}
+.poster_2 .info_secondary li {
+  margin-bottom: 8px;
+}
+.poster_2 .square {
+  width: 580px;
+  height: 580px;
+  background-color: #fef7ea;
+  position: relative;
+  top: 9px;
+  left: 14px;
+  overflow: hidden;
+}
+.poster_2 .blip {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+.poster_2 .blip_black {
+  background-color: black;
+}
+.poster_2 .blip_blue {
+  background-color: #244b74;
+}
+.poster_2 .blip_red {
+  background-color: #e12931;
+}
+.poster_2 .blip_yellow {
+  background-color: #fca45d;
+}
+.poster_2 .blip:nth-child(-n+4) {
+  top: 300px;
+}
+.poster_2 .blip:nth-child(n+5) {
+  top: 380px;
+}
+.poster_2 .blip:nth-child(n+13) {
+  top: 435px;
+}
+.poster_2 .blip:nth-child(1) {
+  left: 117px;
+}
+.poster_2 .blip:nth-child(2) {
+  left: 188px;
+}
+.poster_2 .blip:nth-child(3) {
+  left: 203px;
+}
+.poster_2 .blip:nth-child(4) {
+  left: 275px;
+}
+.poster_2 .blip:nth-child(5) {
+  left: 42px;
+}
+.poster_2 .blip:nth-child(6) {
+  left: 103px;
+}
+.poster_2 .blip:nth-child(7) {
+  left: 118px;
+}
+.poster_2 .blip:nth-child(8) {
+  left: 171px;
+}
+.poster_2 .blip:nth-child(9) {
+  left: 301px;
+}
+.poster_2 .blip:nth-child(10) {
+  left: 403px;
+}
+.poster_2 .blip:nth-child(11) {
+  left: 418px;
+}
+.poster_2 .blip:nth-child(12) {
+  left: 532px;
+}
+.poster_2 .blip:nth-child(13) {
+  left: 115px;
+}
+.poster_2 .blip:nth-child(14) {
+  left: 187px;
+}
+.poster_2 .blip:nth-child(15) {
+  left: 202px;
+}
+.poster_2 .blip:nth-child(16) {
+  left: 272px;
+}
