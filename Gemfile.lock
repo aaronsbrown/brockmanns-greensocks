@@ -115,7 +115,7 @@ DEPENDENCIES
   coffee-script
   less
   libv8 (= 3.11.8.3)
-  middleman (~> 3.0.0)
+  middleman (~> 3.0.13)
   middleman-deploy (~> 0.0.11)
   rb-fsevent (~> 0.9)
   slim
