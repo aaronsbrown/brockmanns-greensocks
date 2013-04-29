@@ -5,62 +5,13 @@ require 'less'
 Slim::Engine.set_default_options format: :html5
 Slim::Engine.set_default_options disable_escape: true
 
-set :debug_assets, true
-
-###
-# Compass
-###
-
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
 set :css_dir, 'assets/stylesheets'
-
 set :js_dir, 'assets/javascripts'
-
 set :images_dir, 'assets/images'
+
+activate :deploy do |deploy|
+  deploy.method = :git
+end
 
 # Build-specific configuration
 configure :build do
@@ -68,10 +19,10 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster
 
   # Use relative URLs
   # activate :relative_assets
